@@ -1,0 +1,17 @@
+{
+  "generator-ngx-rocket": {
+    "version": "2.2.1",
+    "props": {
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "ionic",
+      "auth": true,
+      "appName": "demoMobile",
+      "projectName": "demo-mobile",
+      "mobile": [],
+      "webview": []
+    }
+  }
+}
