@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.isLoading = true;
     this.JokeService.getRandomJoke('dev')
       .finally(() => { this.isLoading = false; })
-      .subscribe((joke: RandomJoke) => { this.jokes.push(joke); console.log(joke); });
+      .subscribe((joke: RandomJoke) => { this.jokes.push(joke); console.log(this.jokes[0].value); });
   }
 
 }

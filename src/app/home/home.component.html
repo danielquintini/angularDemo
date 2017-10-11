@@ -14,9 +14,19 @@
         <span translate>Hello world !</span>
       </ion-card-title>
       <p>
-        <app-loader [isLoading]="isLoading"></app-loader>
-        <q [hidden]="isLoading">{{quote}}</q>
+        this is a paragraph
       </p>
     </ion-card-content>
   </ion-card>
+  <ion-card text-center *ngFor="let joke of jokes" (click)="saveJoke(joke)">
+    <ion-card-content>
+      <p>
+        <q>{{joke.value}}</q>
+      </p>      
+    </ion-card-content>    
+  </ion-card>
+  <app-loader [isLoading]="isLoading"></app-loader>
+  <ion-infinite-scroll id="infinite-scroll" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content id="scroll-content"></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
