@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { JokeService, RandomJoke } from '../shared/joke.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -23,7 +24,11 @@ export class HomeComponent implements OnInit {
     this.isLoading = true;
     this.JokeService.getRandomJoke('dev')
       .finally(() => { this.isLoading = false; })
-      .subscribe((joke: RandomJoke) => { this.jokes.push(joke); console.log(this.jokes[0].value); });
+      .subscribe((joke: RandomJoke) => { this.jokes.push(joke); });
+  }
+
+  saveJoke(joke:RandomJoke){
+
   }
 
 }
