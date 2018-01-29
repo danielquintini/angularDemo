@@ -22,4 +22,17 @@ export class Route {
     }];
   }
 
+  /**
+   * Creates routes using authentication but without using the shell component.
+   * @param routes The routes to add.
+   * @return {Routes} The new routes.
+   */
+  static withoutShell(routes: Routes): Routes {
+    return [{
+      path: routes[0].path,
+      component: routes[0].component,
+      canActivate: [AuthenticationGuard]
+    }];
+  }
+
 }

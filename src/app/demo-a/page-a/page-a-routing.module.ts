@@ -5,7 +5,7 @@ import { Route } from '../../core/route.service';
 import { extract } from '../../core/i18n.service';
 import { PageAComponent } from './page-a.component';
 
-const routes: Routes = Route.withShell([
+const routes: Routes = Route.withoutShell([
   { path: 'demo-a/page-a', component: PageAComponent, data: { title: extract('Home') } }
 ]);
 
