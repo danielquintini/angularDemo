@@ -1,3 +1,138 @@
-<p>
-  page-a works!
-</p>
+<ion-content padding="true"> 
+	<ion-row>
+		<h1>Grid Samples - <a href="/home">Go back home</a></h1>
+		<p class="demo-a__page-a__paragraph">Ionic provides its own grid system which can be customized to achieve virtualy any kind of layout. Below are some examples of layouts that can be build using this framework. Complete documentation can be found <a href="https://ionicframework.com/docs/theming/responsive-grid/#how-it-works">here</a></p>
+	</ion-row>
+
+	<ion-row>
+		<h3>The Basics</h3>
+		<p class="demo-a__page-a__paragraph">The grid is a mobile-first system made up of any number of rows and columns.
+		It is built with flexbox making it extremely responsive. The components that
+		make up the grid can be written as an element (e.g., <code>&lt;ion-grid&gt;</code>) or added as
+		an attribute to any element (e.g., <code>&lt;div ion-row&gt;</code>).</p>
+	</ion-row>
+	<ion-grid class="demo-a__page-a__demo-grid">
+	  <ion-row>
+	    <ion-col>
+	      1 of 2
+	    </ion-col>
+	    <ion-col>
+	      2 of 2
+	    </ion-col>
+	  </ion-row>
+	  <ion-row>
+	    <ion-col>
+	      1 of 3
+	    </ion-col>
+	    <ion-col>
+	      2 of 3
+	    </ion-col>
+	    <ion-col>
+	      3 of 3
+	    </ion-col>
+	  </ion-row>
+	</ion-grid>
+
+	<ion-row>
+		<h3>Column widths</h3>
+		<p class="demo-a__page-a__paragraph">Set the width of one column and the others will automatically resize around it. This can be done using our predefined grid attributes. In the example below, the other columns will resize no matter the width of the center column.</p>
+	</ion-row>
+  <ion-grid class="demo-a__page-a__demo-grid">
+    <ion-row>
+      <ion-col>
+        1 of 3
+      </ion-col>
+      <ion-col col-8>
+        2 of 3 (wider)
+      </ion-col>
+      <ion-col>
+        3 of 3
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        1 of 3
+      </ion-col>
+      <ion-col col-6>
+        2 of 3 (wider)
+      </ion-col>
+      <ion-col>
+        3 of 3
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+	<ion-row>
+		<h3>Breakpoints</h3>
+		<p class="demo-a__page-a__paragraph">Use a combination of width and breakpoint attributes to create a grid that starts out stacked on small, extra small and medium size screens before becoming horizontal on larger screens.</p>
+	</ion-row>
+  <ion-grid class="demo-a__page-a__demo-grid">
+    <ion-row>
+      <ion-col col-12 col-sm-12 col-md>
+        1 of 4
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md>
+        2 of 4
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md>
+        3 of 4
+      </ion-col>
+      <ion-col col-12 col-sm-12 col-md>
+        4 of 4
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+	<ion-row>
+		<h3>Horizontal Alignment</h3>
+		<p class="demo-a__page-a__paragraph">All columns can be horizontally aligned inside of a row by adding different attributes to the row. For a list of available attributes, see <a href="https://ionicframework.com/docs/theming/responsive-grid/#row-attributes">row attributes.</a></p>
+	</ion-row>
+  <ion-grid class="demo-a__page-a__demo-grid">
+    <ion-row justify-content-start>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-center>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-end>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-around>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-between>
+      <ion-col col-3>
+        1 of 2
+      </ion-col>
+      <ion-col col-3>
+        2 of 2
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content> 
+  
