@@ -1,15 +1,12 @@
 <ion-content padding="true"> 
 	<ion-row>
-		<h1>Grid Samples - <a href="/home">Go back home</a></h1>
-		<p class="demo-a__page-a__paragraph">Ionic provides its own grid system which can be customized to achieve virtualy any kind of layout. Below are some examples of layouts that can be build using this framework. Complete documentation can be found <a href="https://ionicframework.com/docs/theming/responsive-grid/#how-it-works">here</a></p>
+		<h1>{{ 'app.demoA.components.pageA.title' | translate}}<a href="/home">{{ 'app.demoA.components.pageA.goBack' | translate}}</a></h1>
+		<p class="demo-a__page-a__paragraph">{{ 'app.demoA.components.pageA.gridOverview' | translate}} <a href="https://ionicframework.com/docs/theming/responsive-grid/#how-it-works">{{ 'app.demoA.components.pageA.gridOverviewLink' | translate}}</a></p>
 	</ion-row>
 
 	<ion-row>
-		<h3>The Basics</h3>
-		<p class="demo-a__page-a__paragraph">The grid is a mobile-first system made up of any number of rows and columns.
-		It is built with flexbox making it extremely responsive. The components that
-		make up the grid can be written as an element (e.g., <code>&lt;ion-grid&gt;</code>) or added as
-		an attribute to any element (e.g., <code>&lt;div ion-row&gt;</code>).</p>
+		<h3>{{ 'app.demoA.components.pageA.basicsTitle' | translate}}</h3>
+		<p class="demo-a__page-a__paragraph">{{ 'app.demoA.components.pageA.basicsDescr0' | translate}}<code>&lt;ion-grid&gt;</code>{{ 'app.demoA.components.pageA.basicsDescr1' | translate}}<code>&lt;div ion-row&gt;</code>{{ 'app.demoA.components.pageA.basicsDescr2' | translate}}</p>
 	</ion-row>
 	<ion-grid class="demo-a__page-a__demo-grid">
 	  <ion-row>
@@ -34,8 +31,8 @@
 	</ion-grid>
 
 	<ion-row>
-		<h3>Column widths</h3>
-		<p class="demo-a__page-a__paragraph">Set the width of one column and the others will automatically resize around it. This can be done using our predefined grid attributes. In the example below, the other columns will resize no matter the width of the center column.</p>
+		<h3>{{ 'app.demoA.components.pageA.widthsTitle' | translate}}</h3>
+		<p class="demo-a__page-a__paragraph">{{ 'app.demoA.components.pageA.widthsDescr' | translate}}</p>
 	</ion-row>
   <ion-grid class="demo-a__page-a__demo-grid">
     <ion-row>
@@ -63,8 +60,8 @@
   </ion-grid>
 
 	<ion-row>
-		<h3>Breakpoints</h3>
-		<p class="demo-a__page-a__paragraph">Use a combination of width and breakpoint attributes to create a grid that starts out stacked on small, extra small and medium size screens before becoming horizontal on larger screens.</p>
+		<h3>{{ 'app.demoA.components.pageA.breakpointsTitle' | translate}}</h3>
+		<p class="demo-a__page-a__paragraph">{{ 'app.demoA.components.pageA.breakpointsDescr' | translate}}</p>
 	</ion-row>
   <ion-grid class="demo-a__page-a__demo-grid">
     <ion-row>
@@ -84,8 +81,8 @@
   </ion-grid>
 
 	<ion-row>
-		<h3>Horizontal Alignment</h3>
-		<p class="demo-a__page-a__paragraph">All columns can be horizontally aligned inside of a row by adding different attributes to the row. For a list of available attributes, see <a href="https://ionicframework.com/docs/theming/responsive-grid/#row-attributes">row attributes.</a></p>
+		<h3>{{ 'app.demoA.components.pageA.hAlignmentsTitle' | translate}}</h3>
+		<p class="demo-a__page-a__paragraph">{{ 'app.demoA.components.pageA.hAlignmentsDescr0' | translate}}<a href="https://ionicframework.com/docs/theming/responsive-grid/#row-attributes">{{ 'app.demoA.components.pageA.hAlignmentsDescr1' | translate}}</a></p>
 	</ion-row>
   <ion-grid class="demo-a__page-a__demo-grid">
     <ion-row justify-content-start>

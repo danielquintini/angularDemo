@@ -4,11 +4,11 @@
     <ion-row justify-content-center no-padding>
       <ion-col col-sm-8 col-lg-6 col-xl-4 align-self-center no-padding>
         <div class="login-header" text-center>
-          <h1 translate>APP_NAME</h1>
+          <h1>{{'app.login.components.login.title0' | translate }}</h1>
           <h6>v{{version}}</h6>
           <ion-list *ngIf="isWeb" color="primary" no-lines no-margin>
             <ion-item color="primary">
-              <ion-label><span translate>Language</span></ion-label>
+              <ion-label>{{'app.login.components.login.label0' | translate }}</ion-label>
               <ion-select [ngModel]="currentLanguage" (ngModelChange)="setLanguage($event)" interface="popover">
                 <ion-option *ngFor="let language of languages" [value]="language">{{language}}</ion-option>
               </ion-select>
@@ -17,34 +17,34 @@
         </div>
         <div class="login-container">
           <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
-            <div padding ion-text color="danger" [hidden]="!error || loginForm.dirty" translate>
-              Username or password incorrect.
+            <div padding ion-text color="danger" [hidden]="!error || loginForm.dirty" >
+              {{'app.login.components.login.label1' | translate }}
             </div>
             <ion-list>
               <ion-item>
-                <ion-label floating>{{'Username' | translate}}</ion-label>
+                <ion-label floating>{{'app.login.components.login.label2' | translate }}</ion-label>
                 <ion-input type="text" formControlName="username"></ion-input>
               </ion-item>
               <div padding [hidden]="loginForm.controls.username.valid || loginForm.controls.username.untouched"
-                     ion-text color="danger" translate>
-                Username is required
+                     ion-text color="danger" >
+                {{'app.login.components.login.label3' | translate }}
               </div>
               <ion-item>
-                <ion-label floating>{{'Password' | translate}}</ion-label>
+                <ion-label floating>{{'app.login.components.login.label4' | translate }}</ion-label>
                 <ion-input type="password" formControlName="password"></ion-input>
               </ion-item>
               <div padding [hidden]="loginForm.controls.password.valid || loginForm.controls.password.untouched"
-                     ion-text color="danger" translate>
-                Password is required
+                     ion-text color="danger">
+                {{'app.login.components.login.label5' | translate }}
               </div>
               <ion-item padding-top no-lines>
-                <ion-label><span translate>Remember me</span></ion-label>
+                <ion-label>{{'app.login.components.login.label6' | translate }}</ion-label>
                 <ion-checkbox formControlName="remember"></ion-checkbox>
               </ion-item>
             </ion-list>
             <div padding-horizontal>
               <button type="submit" [disabled]="loginForm.invalid" ion-button color="primary" block>
-                <span translate>Login</span>
+                {{'app.login.components.login.label7' | translate }}
               </button>
             </div>
           </form>
