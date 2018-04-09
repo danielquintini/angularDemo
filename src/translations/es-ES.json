@@ -1,0 +1,74 @@
+{
+  "app": {
+    "about": {
+      "components": {
+        "about": {
+          "title": "Ayuda",
+          "cardTitle": "Angular + Ionic / DevSandbox",
+          "version": "Version"
+        }
+      }
+    },
+    "shell": {
+      "components": {
+        "shell": {
+          "option0": "Inicio",
+          "option1": "Demo A (sin caparazon - cuadriculas)",
+          "option2": "Demo A (con caparazon - cuadriculas)",
+          "option3": "Demo B (servicios - get/post)",
+          "option4": "Demo B (servicios - put/delete)",
+          "option5": "Ayuda",
+          "instantTranslateLogout": "Logout",
+          "instantTranslateChangeLanguage": "Cambiar idioma",
+          "instantTranslateCancel": "Cancelar",
+          "instantTranslateOk": "OK"
+        }
+      }
+    },
+    "demoA": {
+      "components": {
+        "pageA": {
+          "title": "Ejemplo de cuadriculas - ",
+          "goBack": "Regresar al DevSandbox",
+          "gridOverview": "Ionic proporciona su propio sistema de cuadriculas customizables, el cual puedes usar para lograr virtualmente cualquier diseño. Abajo hay unos ejemplos de diseños que se pueden hacer con este 'framework'. Para mas informacion visita ",
+          "gridOverviewLink": "este enlace",
+          "basicsTitle": "Lo basico",
+          "basicsDescr0": "El sistema de cuadricula da prioridad a dispositicvos mobiles primero y puede estar compuesto de cualquier numero de filas y columnas. Fue construido usando 'flexbox' lo cual lo hace extremadamente responsivo. Los elementos que componen la cuadricula pueden ser escritos de la siguiente forma: ",
+          "basicsDescr1": " o ",
+          "basicsDescr2": ".",
+          "widthsTitle":"Ancho de las columnas",
+          "widthsDescr":"Define el ancho de una columna y deja que las demas se definan automaticamente. La cuadricula provee atributos predefinidos para esto.",
+          "breakpointsTitle":"Breakpoints",
+          "breakpointsDescr":"La cuadricula tambien pude ser definida con sesibilidad ante los distintos 'breakpoints'. Asi podemos crear una cuadricula que se ve de una forma en dispositivos pequeños y de otra en grandes.",
+          "hAlignmentsTitle":"Alineacion horizontal",
+          "hAlignmentsDescr0":"Las columnas puden ser alineadas de formas distintas al añadirles ciertos atributos a la fila. Para una lista completa de atributos disponibles visita ",
+          "hAlignmentsDescr1":"este enlace."
+        }
+      }
+    },
+    "home": {
+      "components": {
+        "home": {
+          "title0": "Inicio",
+          "title1": "Hola Mundo",
+          "p0": "Este es mi espacio de desarrollo para Angular + Ionic"
+        }
+      }
+    },
+    "login": {
+      "components": {
+        "login": {
+          "title0": "DevSandbox",
+          "label0": "Idioma",
+          "label1": "Usuario o contraseña incorrecta.",
+          "label2": "Usuario",
+          "label3": "El usuario es obligatorio",
+          "label4": "Contraseña",
+          "label5": "La contraseña es obligatoria",
+          "label6": "Recuerdame",
+          "label7": "Login"
+        }
+      }
+    }
+  }
+}

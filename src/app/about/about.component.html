@@ -3,15 +3,15 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><span translate>About</span></ion-title>
+    <ion-title>{{'app.about.components.about.title' | translate}}</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
   <ion-card text-center>
     <ion-card-content>
-      <ion-card-title translate>APP_NAME</ion-card-title>
+      <ion-card-title>{{'app.about.components.about.cardTitle' | translate}}</ion-card-title>
       <p>
-        <ion-icon name="code"></ion-icon> <span translate>Version</span> {{version}}
+        <ion-icon name="code"></ion-icon> <span>{{'app.about.components.about.version' | translate}}</span> {{version}}
       </p>
     </ion-card-content>
   </ion-card>

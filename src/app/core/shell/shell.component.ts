@@ -40,13 +40,13 @@ export class ShellComponent implements OnInit {
     const actionSheet = this.actionSheetController.create({ title: this.username });
     const buttons = [
       {
-        text: this.translateService.instant('Logout'),
+        text: this.translateService.instant('app.shell.components.shell.instantTranslateLogout'),
         icon: this.platform.is('ios') ? null : 'log-out',
         role: 'destructive',
         handler: () => this.logout()
       },
       {
-        text: this.translateService.instant('Change language'),
+        text: this.translateService.instant('app.shell.components.shell.instantTranslateChangeLanguage'),
         icon: this.platform.is('ios') ? null : 'globe',
         handler: () => {
           // Wait for action sheet dismiss animation to finish, see "Dismissing And Async Navigation" section in:
@@ -56,7 +56,7 @@ export class ShellComponent implements OnInit {
         }
       },
       {
-        text: this.translateService.instant('Cancel'),
+        text: this.translateService.instant('app.shell.components.shell.instantTranslateCancel'),
         icon: this.platform.is('ios') ? null : 'close',
         role: 'cancel'
       }
@@ -88,7 +88,7 @@ export class ShellComponent implements OnInit {
   private changeLanguage() {
     this.alertController
       .create({
-        title: this.translateService.instant('Change language'),
+        title: this.translateService.instant('app.shell.components.shell.instantTranslateChangeLanguage'),
         inputs: this.i18nService.supportedLanguages.map(language => ({
           type: 'radio',
           label: language,
@@ -97,11 +97,11 @@ export class ShellComponent implements OnInit {
         })),
         buttons: [
           {
-            text: this.translateService.instant('Cancel'),
+            text: this.translateService.instant('app.shell.components.shell.instantTranslateCancel'),
             role: 'cancel'
           },
           {
-            text: this.translateService.instant('Ok'),
+            text: this.translateService.instant('app.shell.components.shell.instantTranslateOk'),
             handler: language => {
               this.i18nService.language = language;
             }

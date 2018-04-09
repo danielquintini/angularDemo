@@ -1,19 +1,74 @@
 {
-  "APP_NAME": "demoMobile",
-  "About": "About",
-  "Hello world !": "Hello world !",
-  "Home": "Home",
-  "Cancel": "Cancel",
-  "Change language": "Change language",
-  "Language": "Language",
-  "Ok": "Ok",
-  "Login": "Login",
-  "Logout": "Logout",
-  "Password": "Password",
-  "Password is required": "Password is required",
-  "Username": "Username",
-  "Username is required": "Username is required",
-  "Username or password incorrect.": "Username or password incorrect.",
-  "Remember me": "Remember me",
-  "Version": "Version"
+  "app": {
+    "about": {
+      "components": {
+        "about": {
+          "title": "About",
+          "cardTitle": "Angular + Ionic / DevSandbox",
+          "version": "Version"
+        }
+      }
+    },
+    "shell": {
+      "components": {
+        "shell": {
+          "option0": "Home",
+          "option1": "Demo A (no shell - grid sample)",
+          "option2": "Demo A (shelled - grid sample)",
+          "option3": "Demo B (services - get/post)",
+          "option4": "Demo B (services - put/delete)",
+          "option5": "About",
+          "instantTranslateLogout": "Logout",
+          "instantTranslateChangeLanguage": "Change language",
+          "instantTranslateCancel": "Cancel",
+          "instantTranslateOk": "OK"
+        }
+      }
+    },
+    "demoA": {
+      "components": {
+        "pageA": {
+          "title": "Grid Samples - ",
+          "goBack": "Back to DevSandbox",
+          "gridOverview": "Ionic provides its own grid system which can be customized to achieve virtualy any kind of layout. Below are some examples of layouts that can be build using this framework. Complete documentation can be found",
+          "gridOverviewLink": "here",
+          "basicsTitle": "The Basics",
+          "basicsDescr0": "The grid is a mobile-first system made up of any number of rows and columns. It is built with flexbox making it extremely responsive. The components that make up the grid can be written as an element (e.g., ",
+          "basicsDescr1": ") or added as an attribute to any element (e.g., ",
+          "basicsDescr2": ").",
+          "widthsTitle":"Column widths",
+          "widthsDescr":"Set the width of one column and the others will automatically resize around it. This can be done using our predefined grid attributes. In the example below, the other columns will resize no matter the width of the center column.",
+          "breakpointsTitle":"Breakpoints",
+          "breakpointsDescr":"Use a combination of width and breakpoint attributes to create a grid that starts out stacked on small, extra small and medium size screens before becoming horizontal on larger screens.",
+          "hAlignmentsTitle":"Horizontal Alignment",
+          "hAlignmentsDescr0":"All columns can be horizontally aligned inside of a row by adding different attributes to the row. For a list of available attributes, see ",
+          "hAlignmentsDescr1":"row attributes."
+        }
+      }
+    },
+    "home": {
+      "components": {
+        "home": {
+          "title0": "Home",
+          "title1": "Hello world!",
+          "p0": "This is a paragraph"
+        }
+      }
+    },
+    "login": {
+      "components": {
+        "login": {
+          "title0": "DevSandbox",
+          "label0": "Language",
+          "label1": "Username or password incorrect.",
+          "label2": "Username",
+          "label3": "Username is required",
+          "label4": "Password",
+          "label5": "Password is required",
+          "label6": "Remember me",
+          "label7": "Login"
+        }
+      }
+    }
+  }
 }

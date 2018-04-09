@@ -5,7 +5,7 @@ import { Subject } from 'rxjs/Subject';
 import { extract, I18nService } from './i18n.service';
 
 const defaultLanguage = 'en-US';
-const supportedLanguages = ['eo', 'en-US', 'fr-FR'];
+const supportedLanguages = ['eo', 'en-US', 'es-Es'];
 
 class MockTranslateService {
 
@@ -118,8 +118,8 @@ describe('I18nService', () => {
       i18nService.language = newLanguage;
 
       // Assert
-      expect(translateService.use).toHaveBeenCalledWith('fr-FR');
-      expect(onLangChangeSpy).toHaveBeenCalledWith('fr-FR');
+      expect(translateService.use).toHaveBeenCalledWith('es-Es');
+      expect(onLangChangeSpy).toHaveBeenCalledWith('es-Es');
     });
 
     it('should change current language to default if unsupported', () => {
