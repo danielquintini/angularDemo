@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
-    "start": "ng serve --proxy-config proxy.conf.js",
+    "start": "concurrently --kill-others \"ng serve --proxy-config proxy.conf.js\" \"node demo-server/demoServer.js\"",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "ng test",
     "test:ci": "npm run lint -s && ng test --single-run --code-coverage",
@@ -47,6 +47,7 @@
     "@types/node": "^8.9.5",
     "babel-preset-env": "^1.6.1",
     "codelyzer": "^3.2.2",
+    "concurrently": "^3.5.1",
     "hads": "^1.6.1",
     "htmlhint": "^0.9.13",
     "https-proxy-agent": "^2.2.0",
